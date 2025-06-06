@@ -1,0 +1,10 @@
+name = "Solver_EOM"
+uuid = "a0257197-3e67-4b6f-aac9-30b5176f634e"
+authors = ["euclid8128 <y.kato.534@ms.saitama-u.ac.jp>"]
+version = "0.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
