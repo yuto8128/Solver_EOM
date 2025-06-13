@@ -41,8 +41,8 @@ import Solver_EOM: timeprop
         
         x_final, a_final = timeprop(F, tmax, x0, a0, h)
         
-        expected_x = tmax^3/6.0
-        expected_a = tmax^2/2.0
+        expected_x = x0 + a0*tmax + tmax^3/6.0
+        expected_a = a0 + tmax^2/2.0
         @test isapprox(x_final, expected_x, rtol=1e-3)
         @test isapprox(a_final, expected_a, rtol=1e-3)
     end
